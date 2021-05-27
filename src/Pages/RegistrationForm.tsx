@@ -1,6 +1,7 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Form, Button, Col, InputGroup } from 'react-bootstrap';
-
+import StyledButton from '../Button';
+import '../styles/Button.scss'
 function RegistrationForm() {
     const [validated, setValidated] = useState(false);
 
@@ -85,10 +86,11 @@ function RegistrationForm() {
                     feedback="You must agree before submitting."
                 />
             </Form.Group>
-            <Button type="submit">Submit form</Button>
+            <StyledButton type="submit">Zarejestruj się</StyledButton>
         </Form>
     );
 }
 
 
 export default RegistrationForm;
+

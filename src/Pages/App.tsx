@@ -1,7 +1,7 @@
 
 import logo from './logo.svg';
 import { Counter } from '../features/counter/Counter';
-import '../App.scss';
+import '../styles/App.scss'
 import { Button } from 'react-bootstrap';
 import LoginForm from './LoginForm';
 import React from 'react';
