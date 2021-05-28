@@ -8,6 +8,7 @@ import React from 'react';
 import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams } from "react-router-dom";
 import RegistrationForm from './RegistrationForm';
 import GroupsView from './GroupsView';
+import AddGroup from "./AddGroup";
 
 export default function App() {
   return (
@@ -26,6 +27,9 @@ export default function App() {
           <li>
             <Link to="/groups">Przeglądaj grupy</Link>
           </li>
+          <li>
+            <Link to="/addGroup">Dodaj grupę</Link>
+          </li>
         </ul>
 
         <Switch>
@@ -37,6 +41,9 @@ export default function App() {
           </Route>
           <Route path="/groups">
             <Topics />
+          </Route>
+          <Route path="/addGroup">
+            <AddGroup />
           </Route>
           <Route path="/">
 
