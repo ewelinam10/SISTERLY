@@ -2,6 +2,8 @@
 import { Card, Button } from 'react-bootstrap';
 import React from 'react';
 
+import db from '../firebaseConfig';
+
 interface GroupOptions {
     name: string;
     description: string;
@@ -26,14 +28,17 @@ class GroupsView extends React.Component<GroupsViewProps, GroupsViewState> {
 
     constructor(props: GroupsViewProps) {
         super(props);
-        fetch(this.linkToExampleOfGroups)
-            .then(res => res.json())
-            .then((data) => {
-                this.setState({ groups: data.groups })
-            })
-            .catch(console.log)
-    }
 
+        db.collection("groups")
+            .get()
+            .then((snapshot) => {
+                snapshot.forEach((doc) => {
+                    const updatedGroups = this.state.groups;
+                    updatedGroups.push(doc.data() as GroupOptions);
+                    this.setState({ groups: updatedGroups })
+                });
+            });
+    }
 
     render() {
         return (
