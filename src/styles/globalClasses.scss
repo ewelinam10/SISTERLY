@@ -1,0 +1,10 @@
+.my-panel{
+  padding: 18px;
+  margin: 20px;
+  border-radius: 10px;
+  border: 2px solid $base-gray;
+
+  &:hover{
+    border: 2px solid $base-blue;
+  }
+}
