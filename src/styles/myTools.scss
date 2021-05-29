@@ -1,0 +1,45 @@
+.my-tools-avatar{
+  border-radius: 50%;
+  border: 1px solid $base-gray;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+.sticky-note-wrapper{
+  height: 100px;
+}
+
+
+.sticky-note-image{
+  width: 100px;
+  height: 100px;
+
+  &:hover{
+    transform: scale(1.1);
+
+  }
+}
+
+
+.sticky-note-name{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  padding: 15px;
+  font-size: 0.7rem;
+  text-align: center;
+  top: -100px;
+  text-overflow: ellipsis;
+  pointer-events: none;
+  word-wrap: break-word;
+}
+
+
+.sticky-note-opend{
+  visibility: hidden;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+}

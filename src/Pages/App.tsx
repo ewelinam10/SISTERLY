@@ -12,7 +12,7 @@ import AddGroup from "./AddGroup";
 import NavigationBar from '../Components/NavigationBar';
 import MentorRegistration from './MentorRegistration';
 import LandingPage from './LandingPage';
-import MyGroup from "./MyGroup";
+import MyTools from "./MyTools";
 
 export default function App() {
   return (
@@ -53,7 +53,7 @@ export default function App() {
           <Route path="/addGroup">
             <AddGroup />
           </Route>
-          <Route exact path="/myGroup" component={MyGroup}>
+          <Route exact path="/myTools" component={MyTools}>
           </Route>
           <Route path="/">
             <LandingPage />
