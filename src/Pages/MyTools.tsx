@@ -1,7 +1,7 @@
 import Home from "../images/icons/home_black_24dp-1.svg"
 import Avatar from "../images/icons/avatar.svg"
 import {useState} from "react";
-import StickyNote from "../Components/tools/StickyNote";
+import StickyNote from "../components/tools/StickyNote";
 
 const MyTools = () => {
 

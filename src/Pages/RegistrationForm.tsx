@@ -1,8 +1,8 @@
 import React, {useState} from 'react';
 import {Form, Button, Col, InputGroup} from 'react-bootstrap';
-import StyledButton from '../Components/Button';
+import StyledButton from '../components/Button';
 import '../styles/Button.scss'
-import NavigationBar from "../Components/NavigationBar";
+import NavigationBar from "../components/NavigationBar";
 
 function RegistrationForm() {
     const [validated, setValidated] = useState(false);

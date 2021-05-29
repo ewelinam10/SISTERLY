@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams 
 import RegistrationForm from './RegistrationForm';
 import GroupsView from './GroupsView';
 import AddGroup from "./AddGroup";
-import NavigationBar from '../Components/NavigationBar';
+import NavigationBar from '../components/NavigationBar';
 import MentorRegistration from './MentorRegistration';
 import LandingPage from './LandingPage';
 import MyTools from "./MyTools";
@@ -17,9 +17,6 @@ import MyTools from "./MyTools";
 export default function App() {
   return (
     <Router>
-
-
-
         <Switch>
           <Route path="/singin">
             <LoginForm />

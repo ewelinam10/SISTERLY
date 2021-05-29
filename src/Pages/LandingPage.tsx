@@ -1,6 +1,6 @@
-import AboutContainer from "../Components/About";
-import LandingContainer from "../Components/LandingContainer";
-import NavigationBar from "../Components/NavigationBar";
+import AboutContainer from "../components/About";
+import LandingContainer from "../components/LandingContainer";
+import NavigationBar from "../components/NavigationBar";
 import React from "react";
 
 
