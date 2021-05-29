@@ -2,19 +2,23 @@ import AboutContainer from "../Components/About";
 import LandingContainer from "../Components/LandingContainer";
 import NavigationBar from "../Components/NavigationBar";
 import React from "react";
+import HowItWorksContainer from "../Components/HowItWorksContainer";
 
 
 const LandingPage = () => {
     return (
         <div>
             <NavigationBar />
-            <section>
+
             <LandingContainer />
-            </section>
+
             <section>
                 <AboutContainer />
             </section>
-        </div>                   
+            <section>
+                <HowItWorksContainer />
+            </section>
+        </div>
 
     )
 }
