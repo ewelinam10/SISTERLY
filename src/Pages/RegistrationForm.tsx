@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Form, Button, Col, InputGroup } from 'react-bootstrap';
-import StyledButton from '../Button';
+import StyledButton from '../Components/Button';
 import '../styles/Button.scss'
 function RegistrationForm() {
     const [validated, setValidated] = useState(false);

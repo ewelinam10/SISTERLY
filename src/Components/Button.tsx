@@ -1,7 +1,6 @@
 import React from "react";
 import styled, { keyframes } from 'styled-components'
 import { Button } from 'react-bootstrap';
-
 const fadeIn = keyframes`
   0% {
     opacity: 20%;
@@ -10,7 +9,7 @@ const fadeIn = keyframes`
     opacity: 1;
   }
 `
-const color = '#FFB6C1';
+const color = '#FF5E78'; // nie wiem jak zaimportowac ze styli base-pink
 
 const StyledButton = styled(Button)`
 animation: 3s ${fadeIn} ease-out;
@@ -37,7 +36,7 @@ overflow: hidden;
   transition: none;
 }
 &:hover {
-  background-color: $color;
+  background-color: $color !important;
   color: #fff;
   border-bottom: 4px solid darken($color, 10%);
   &:before {

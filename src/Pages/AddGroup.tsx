@@ -1,5 +1,5 @@
-import React, {useState} from 'react';
-import QuestionSection from "../components/groups/QuestionSection";
+import React, { useState } from 'react';
+import QuestionSection from "../Components/groups/QuestionSection";
 
 const AddGroup = () => {
 
@@ -18,15 +18,15 @@ const AddGroup = () => {
 
 
     const showQuestion = () => {
-        if(questionCounter === questionList.length){
+        if (questionCounter === questionList.length) {
             return (
                 answerList.map(answer => (
                     <h1>{answer}</h1>
                 ))
             )
             ///wyswietl podsumowanie formularza czy cos takiego
-        }else{
-            return <QuestionSection question={questionList[questionCounter]} addAnswer={addAnswer}/>
+        } else {
+            return <QuestionSection question={questionList[questionCounter]} addAnswer={addAnswer} />
         }
     }
 
