@@ -18,6 +18,7 @@ text-decoration: none;
 background-color: ${color};
 border: 2px solid $color;
 display: inline-block;
+font-size :1rem;
 border-radius: 0.3em;
 border-color: ${color};
 transition: all 0.2s ease-in-out;

@@ -1,12 +1,12 @@
 
 import { Navbar, Nav, FormControl, Form, NavDropdown, Button } from 'react-bootstrap';
-import image from '../images/logo.png'
+import image from '../images/logo.svg'
 const NavigationBar = () => {
 
     return (
         <Navbar expand="lg">
             <Navbar.Brand href="/">
-                <img width='30%' src={image} />
+                <img width='45%' src={image} />
 
             </Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />

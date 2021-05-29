@@ -17,7 +17,32 @@ import MyGroup from "./MyGroup";
 export default function App() {
   return (
     <Router>
+<<<<<<< origin/main
 
+        {/* <ul>
+          <li>
+            <Link to="/">Strona główna</Link>
+          </li>
+          <li>
+            <Link to="/singin">Zaloguj się</Link>
+          </li>
+          <li>
+            <Link to="/signup">Zarejestruj się</Link>
+          </li>
+          <li>
+            <Link to="/groups">Przeglądaj grupy</Link>
+          </li>
+
+          <li>
+            <Link to="/addGroup">Dodaj grupę</Link>
+          </li>
+        </ul>
+=======
+        </ul> */}
+=======
+      <NavigationBar />
+      <div>
+>>>>>>> local
 
 
         <Switch>
