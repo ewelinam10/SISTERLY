@@ -17,9 +17,6 @@ import MyTools from "./MyTools";
 export default function App() {
   return (
     <Router>
-
-
-
         <Switch>
           <Route path="/singin">
             <LoginForm />
