@@ -12,13 +12,12 @@ import AddGroup from "./AddGroup";
 import NavigationBar from '../Components/NavigationBar';
 import MentorRegistration from './MentorRegistration';
 import LandingPage from './LandingPage';
-
+import MyGroup from "./MyGroup";
 
 export default function App() {
   return (
     <Router>
-      <NavigationBar />
-      <div>
+
         {/* <ul>
           <li>
             <Link to="/">Strona główna</Link>
@@ -54,11 +53,13 @@ export default function App() {
           <Route path="/addGroup">
             <AddGroup />
           </Route>
+          <Route exact path="/myGroup" component={MyGroup}>
+          </Route>
           <Route path="/">
             <LandingPage />
           </Route>
         </Switch>
-      </div>
+
     </Router >
   );
 }

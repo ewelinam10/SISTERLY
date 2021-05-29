@@ -1,6 +1,6 @@
 import { Form, Button } from 'react-bootstrap';
 import image from '../images/main_image.jpeg'
-import StyledButton from '../Components/Button'
+import StyledButton from './/Button'
 
 const LandingContainer = () => {
     return (

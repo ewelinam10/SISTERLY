@@ -15,6 +15,8 @@ const NavigationBar = () => {
                     <Nav.Link href="/mentor_registration">Zostań mentorem</Nav.Link>
                     <Nav.Link href="/singin">Zaloguj</Nav.Link>
                     <Nav.Link href="/signup">Załóż konto</Nav.Link>
+                    <Nav.Link href="/addGroup">Dodaj grupę</Nav.Link>
+                    <Nav.Link href="/myGroup">Grupa</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar >
