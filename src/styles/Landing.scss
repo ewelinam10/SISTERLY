@@ -6,10 +6,11 @@
   
 
 .landing-container{
+   
     display: flex;
     align-items: center;
     text-align: center;
-    font-size: 24px;
+    font-size: 1.2rem;
     font-weight: 400;
 
     div:nth-child(1){
@@ -34,6 +35,10 @@
                 border-bottom-right-radius: 0;
                 border-color: $base-pink;
                 color : $base-pink;
+                ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                    color: pink;
+                  }
+                  
                 &:hover{
                     box-shadow :0 0 0 0.2rem rgba(255, 94, 120, 0.25);
                 }
@@ -53,7 +58,7 @@
 
     h1{
         font-weight: 700;
-        font-size: 48px;
+        font-size: 1.8rem;
     }
     span{
         width: 80%;

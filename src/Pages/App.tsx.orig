@@ -12,12 +12,37 @@ import AddGroup from "./AddGroup";
 import NavigationBar from '../Components/NavigationBar';
 import MentorRegistration from './MentorRegistration';
 import LandingPage from './LandingPage';
-import MyTools from "./MyTools";
+import MyGroup from "./MyGroup";
 
 export default function App() {
   return (
     <Router>
+<<<<<<< origin/main
 
+        {/* <ul>
+          <li>
+            <Link to="/">Strona główna</Link>
+          </li>
+          <li>
+            <Link to="/singin">Zaloguj się</Link>
+          </li>
+          <li>
+            <Link to="/signup">Zarejestruj się</Link>
+          </li>
+          <li>
+            <Link to="/groups">Przeglądaj grupy</Link>
+          </li>
+
+          <li>
+            <Link to="/addGroup">Dodaj grupę</Link>
+          </li>
+        </ul>
+=======
+        </ul> */}
+=======
+      <NavigationBar />
+      <div>
+>>>>>>> local
 
 
         <Switch>
@@ -33,7 +58,7 @@ export default function App() {
           <Route path="/addGroup">
             <AddGroup />
           </Route>
-          <Route exact path="/myTools" component={MyTools}>
+          <Route exact path="/myGroup" component={MyGroup}>
           </Route>
           <Route path="/">
             <LandingPage />
