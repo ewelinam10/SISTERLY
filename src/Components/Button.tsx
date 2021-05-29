@@ -19,7 +19,7 @@ background-color: ${color};
 border: 2px solid $color;
 display: inline-block;
 border-radius: 0.3em;
-border-color: black;
+border-color: ${color};
 transition: all 0.2s ease-in-out;
 position: relative;
 overflow: hidden;
@@ -38,7 +38,7 @@ overflow: hidden;
 &:hover {
   background-color: $color !important;
   color: #fff;
-  border-bottom: 4px solid darken($color, 10%);
+  border-color: ${color};
   &:before {
     transform: skewX(-45deg) translateX(13.5em);
    transition: all 0.5s ease-in-out;
