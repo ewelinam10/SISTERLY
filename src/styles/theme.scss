@@ -1,7 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@600;700&display=swap');
 
-
 * {
+    @media only screen and (max-device-width: 480px){
+        font-size: 15px;
+    }
     font-family: 'Nunito', sans-serif;
     color: $base-purple;
     padding:5px;
