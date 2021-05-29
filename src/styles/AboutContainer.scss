@@ -6,10 +6,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    text-align: center;
+
     h1{
-        font-size: 3em;
+        font-size: 2.5em;
         font-weight: 700;
+    }
+
+    img{
+        color: $base-yellow;
+        height: 50px;
     }
 
 }
