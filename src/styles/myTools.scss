@@ -66,10 +66,45 @@
 }
 
 .my-tools-message-input{
+  width: 93%;
+}
 
+.my-tools-body{
+  width: 100%;
+  height: 100%;
+}
+
+.my-tools-draggable-box{
+  position: relative;
 
 }
 
-.my-tools-message-wrapper{
-  height: 90%;
+.my-tools-sticky-note-draggable{
+  width: 60px;
+  height: 60px;
 }
+
+.draggable-wrapper{
+  height: 100%;
+}
+
+.react-draggable .react-draggable-dragging .react-draggable-dragged{
+  width: 60px !important;
+}
+
+.my-tools-sticky-note-section{
+  position: relative;
+  overflow: hidden;
+}
+
+.draggable-wrapper{
+  position: relative;
+}
+
+.my-tools-plus-icon{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+

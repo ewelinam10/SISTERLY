@@ -4,6 +4,11 @@ import {useEffect, useState} from "react";
 import StickyNote from "../Components/tools/StickyNote";
 import Camera from "../images/icons/videocam_off_black_24dp.svg";
 import Mic from "../images/icons/mic_off_black_24dp.svg"
+import Chat from "../images/icons/chat_black_24dp.svg"
+import Draggable, {DraggableCore} from 'react-draggable';
+import StickyNoteImg from "../images/sticky_note.jpg"
+import PlusIcon from "../images/icons/plus-icon.svg"
+import {Navbar} from "react-bootstrap";
 
 const MyTools = () => {
 
@@ -22,9 +27,24 @@ const MyTools = () => {
         }
     ]
 
+    const stickyNotesGroupMock = [
+        {
+            name: 'Notatka 1 test dlugiej nazwy',
+        },
+        {
+            name: 'Notatka 2',
+        },
+        {
+            name: 'Notatka 3',
+        }
+    ]
+
+
     const [myNotes, setMyNotes] = useState(stickyNotesMock)
+    const [myNotesGroup, setMyNotesGroup] = useState(stickyNotesGroupMock)
     const [counter, setCounter] = useState(3600)
     const [formatedCounter, setFormatedCounter] = useState("")
+    const [messageInput, setMessageInput] = useState('')
 
     const formatSeconds = (time) => {
         let hours = Math.floor(time / 3600);
@@ -41,6 +61,27 @@ const MyTools = () => {
         return strHours + "h " + strMinutes + "m " + strSeconds + "s"
     }
 
+
+    const addMyNote = () => {
+
+        const nextNote = {
+            name: `Notatka ${myNotes.length + 1}`,
+            description: ''
+        }
+        setMyNotes([...myNotes, nextNote])
+    }
+
+    const addMyNoteGroup = () => {
+        const nextNote = {
+            name: `Notatka ${myNotesGroup.length + 1}`,
+        }
+        setMyNotesGroup([...myNotesGroup, nextNote])
+    }
+
+    const handleChangeMessage = (e) => {
+        setMessageInput(e.target.value)
+    }
+
     useEffect(() => {
 
 
@@ -54,10 +95,12 @@ const MyTools = () => {
 
     return (
 
-        <div>
+        <div className="my-tools-body">
             <nav className="col-md-11 d-flex">
-                <div className="col-md-6 text-left">
-                    <img src={Logo} className="my-tools-logo"/>
+                <div className="col-md-6 text-left" >
+                    <Navbar.Brand href="/">
+                        <img src={Logo} className="my-tools-logo"/>
+                    </Navbar.Brand>
                 </div>
                 <div className="col-md-6 text-right offset-md-1">
                     <img className="my-tools-avatar" src={Avatar}/>
@@ -71,6 +114,8 @@ const MyTools = () => {
                     {myNotes.map((note, index) => (
                         <StickyNote note={note} index={index}/>
                     ))}
+
+                    <img className="my-tools-plus-icon pull-right" onClick={addMyNote} src={PlusIcon} />
                 </div>
             </div>
 
@@ -90,14 +135,25 @@ const MyTools = () => {
                         </div>
                     </div>
 
-                    <div className="mt-1 my-panel">
+                    <div className="mt-1 my-panel my-tools-message-wrapper">
 
+                        <input onChange={handleChangeMessage} className="my-tools-message-input" placeholder="Twoja wiadomosc.." value={messageInput}/>
+                        <img className="ml-2" src={Chat} onClick={() => setMessageInput('')}></img>
                     </div>
                 </div>
 
 
-                <div className="m-0 my-panel col-md-4">
+                <div className="m-0 my-panel col-md-4" id="draggable-wrapper">
                     Wasze notatki ze spotkania:
+
+
+                    {myNotesGroup.map((note, index) => (
+                        <Draggable bounds="#draggable-wrapper">
+                            <img className="my-tools-sticky-note-draggable" src={StickyNoteImg}/>
+                        </Draggable>
+                    ))}
+
+                    <img className="my-tools-plus-icon pull-right" onClick={addMyNoteGroup} src={PlusIcon} />
                 </div>
             </div>
         </div>

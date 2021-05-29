@@ -7,10 +7,10 @@ const StickyNotes = ({note, index}) => {
 
     const openNote = () => {
 
-        // setNoteOpend(!noteOpend);
-        //
-        // const element : any = document.getElementById(`sticky-note-opened-${index}`).style.visibility = "visible";
+        setNoteOpend(!noteOpend);
 
+        // const element : any = document.getElementById(`sticky-note-opened-${index}`).style.visibility = "visible";
+        // element.style.visibility = true
     }
 
     return(
