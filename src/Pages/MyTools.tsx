@@ -1,7 +1,7 @@
 import Logo from "../images/logo.svg"
 import Avatar from "../images/icons/avatar.svg"
 import {useEffect, useState} from "react";
-import StickyNote from "../components/tools/StickyNote";
+import StickyNote from "../Components/tools/StickyNote";
 import Camera from "../images/icons/videocam_off_black_24dp.svg";
 import Mic from "../images/icons/mic_off_black_24dp.svg"
 import Chat from "../images/icons/chat_black_24dp.svg"

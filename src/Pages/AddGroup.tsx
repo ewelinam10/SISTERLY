@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import QuestionSection from "../components/groups/QuestionSection";
+import QuestionSection from "../Components/groups/QuestionSection";
 
 const AddGroup = () => {
 

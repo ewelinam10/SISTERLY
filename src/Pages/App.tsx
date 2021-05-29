@@ -9,7 +9,7 @@ import { BrowserRouter as Router, Switch, Route, Link, useRouteMatch, useParams 
 import RegistrationForm from './RegistrationForm';
 import GroupsView from './GroupsView';
 import AddGroup from "./AddGroup";
-import NavigationBar from '../components/NavigationBar';
+import NavigationBar from '../Components/NavigationBar';
 import MentorRegistration from './MentorRegistration';
 import LandingPage from './LandingPage';
 import MyTools from "./MyTools";
