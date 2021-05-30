@@ -1,4 +1,17 @@
+@media only screen and (max-width: 900px) {
+    .steps_container {
+      flex-direction: column;
+    }
+  }
+  
+
+
+
+
 .steps_container{
+    @media only screen and (max-width: 900px) {
+        flex-direction: column;
+    }
     display: flex;
     flex-direction: row;
     justify-content: space-between;
