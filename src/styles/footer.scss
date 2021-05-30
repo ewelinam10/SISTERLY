@@ -1,0 +1,39 @@
+.main-footer{
+
+  bottom: 0px;
+  padding: 0px !important;
+  width: 100%;
+  height: 60px;
+  background-color: $base-purple;
+}
+
+#root{
+  padding: 0px !important;
+}
+
+body, html{
+  padding: 0px !important;
+}
+
+.main-contact{
+  position: relative;
+  top: 25px;
+  left: 50px;
+  color: #FFF;
+  text-transform: uppercase;
+
+}
+
+.main-footer-icon-facebook{
+  position: relative;
+  font-size: 3rem;
+  top: 22px;
+  left: 85vw;
+}
+
+.main-footer-icon-mail{
+  position: relative;
+  font-size: 3rem;
+  top: 22px;
+  left: 86vw;
+}
