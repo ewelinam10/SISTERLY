@@ -4,6 +4,7 @@ import image from '../images/logo.svg'
 import { useAppDispatch } from '../app/hooks';
 import { logout } from "../features/usersession/userSessionSlice";
 
+
 interface NavigationBarProps {
     isLoggedIn: boolean;
 }
@@ -35,10 +36,19 @@ function getLinks4LoggedInUser(onLogoutClick: () => void): JSX.Element[] {
     navLinks.push(<Nav.Link href="/addGroup">ZAŁÓŻ KRĄG</Nav.Link>);
     navLinks.push(<Nav.Link href="/myTools">WIDOK SPOTKANIA</Nav.Link>);
     navLinks.push(<Nav.Link href="/mentors">MENTORZY</Nav.Link>);
-    navLinks.push(<Nav.Link href="/rules">KODEKS SISTERLY</Nav.Link>);
     navLinks.push(<Nav.Link href="/knowhow">BAZA WIEDZY</Nav.Link>);
-    navLinks.push(<Nav.Link onClick={onLogoutClick} href="/">WYLOGUJ</Nav.Link>);
+    navLinks.push(getNavDrop(onLogoutClick));
+
     return navLinks;
+}
+
+function getNavDrop(onLogoutClick: () => void): JSX.Element {
+    return (<NavDropdown title='' id="nav-dropdown">
+        <NavDropdown.Item href='/editprofile'>EDYTUJ PROFIL</NavDropdown.Item>
+        <NavDropdown.Item href='/rules'>KODEKS SISTERLY</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item onClick={onLogoutClick} href='/'>WYLOGUJ</NavDropdown.Item>
+    </NavDropdown>);
 }
 
 
