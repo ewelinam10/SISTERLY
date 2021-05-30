@@ -2,7 +2,6 @@ import React, {useState} from 'react';
 import {Form, Button, Col, InputGroup} from 'react-bootstrap';
 import StyledButton from '../Components/Button';
 import '../styles/Button.scss'
-import NavigationBar from "../Components/NavigationBar";
 
 function RegistrationForm() {
     const [validated, setValidated] = useState(false);
@@ -19,7 +18,6 @@ function RegistrationForm() {
 
     return (
         <div>
-            <NavigationBar/>
             <Form noValidate validated={validated} onSubmit={handleSubmit}>
                 <Form.Row>
                     <Form.Group as={Col} md="4" controlId="validationCustom01">

@@ -14,15 +14,15 @@ const MyTools = () => {
 
     const stickyNotesMock = [
         {
-            name: 'Notatka 1 test dlugiej nazwy',
+            name: 'KASIA',
             description: 'Opis notatki 1 test dlugosci notatki',
         },
         {
-            name: 'Notatka 2',
+            name: 'EWELINA',
             description: 'Opis notatki 2',
         },
         {
-            name: 'Notatka 3',
+            name: 'MAGDA',
             description: 'Opis notatki 3',
         }
     ]
@@ -96,19 +96,9 @@ const MyTools = () => {
     return (
 
         <div className="my-tools-body">
-            <nav className="col-md-11 d-flex">
-                <div className="col-md-6 text-left" >
-                    <Navbar.Brand href="/">
-                        <img src={Logo} className="my-tools-logo"/>
-                    </Navbar.Brand>
-                </div>
-                <div className="col-md-6 text-right offset-md-1">
-                    <img className="my-tools-avatar" src={Avatar}/>
-                </div>
-            </nav>
 
             <div className="my-panel my-tools-sticky-note-section">
-                Twoja prywatna lista TODO:
+               TODO lista kręgu:
 
                 <div className="d-flex">
                     {myNotes.map((note, index) => (

@@ -13,29 +13,36 @@ import NavigationBar from '../Components/NavigationBar';
 import MentorRegistration from './MentorRegistration';
 import LandingPage from './LandingPage';
 import MyTools from "./MyTools";
+import { isUserLoggedIn, userName } from "../features/usersession/userSessionSlice"
+import { useAppSelector, } from '../app/hooks';
+
 
 export default function App() {
+
+  const isLoggedIn = useAppSelector(isUserLoggedIn);
+  const username = useAppSelector(userName);
   return (
     <Router>
-        <Switch>
-          <Route path="/singin">
-            <LoginForm />
-          </Route>
-          <Route path="/signup">
-            <RegistrationForm />
-          </Route>
-          <Route path="/mentor_registration">
-            <MentorRegistration />
-          </Route>
-          <Route path="/addGroup">
-            <AddGroup />
-          </Route>
-          <Route exact path="/myTools" component={MyTools}>
-          </Route>
-          <Route path="/">
-            <LandingPage />
-          </Route>
-        </Switch>
+      <NavigationBar isLoggedIn={isLoggedIn} />
+      <Switch>
+        <Route path="/singin">
+          <LoginForm />
+        </Route>
+        <Route path="/signup">
+          <RegistrationForm />
+        </Route>
+        <Route path="/mentor_registration">
+          <MentorRegistration />
+        </Route>
+        <Route path="/addGroup">
+          <AddGroup />
+        </Route>
+        <Route exact path="/myTools" component={MyTools}>
+        </Route>
+        <Route path="/">
+          <LandingPage />
+        </Route>
+      </Switch>
 
     </Router >
   );

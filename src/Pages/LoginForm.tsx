@@ -1,5 +1,5 @@
 import {Form, Button} from 'react-bootstrap';
-import NavigationBar from "../Components/NavigationBar";
+
 import { useAppDispatch } from '../app/hooks';
 import { useHistory } from "react-router-dom";
 
@@ -25,7 +25,6 @@ function LoginForm() {
 
     return (
         <div>
-            <NavigationBar/>
             <Form onSubmit={handleSubmit}>
                 <Form.Group controlId="formBasicEmail">
                     <Form.Label>Email</Form.Label>
