@@ -11,5 +11,8 @@
 @import "landingSections.scss";
 @import "Groups.scss";
 @import "RecomendationContainer.scss";
+<<<<<<< origin/main
 @import "footer.scss";
+=======
 @import "GroupsView.scss";
+>>>>>>> local

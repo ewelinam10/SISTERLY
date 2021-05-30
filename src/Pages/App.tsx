@@ -43,7 +43,9 @@ export default function App() {
                     <Mentors/>
                 </Route>
                 <Route path="/">
-                    <LandingPage/>
+          {isLoggedIn && <GroupsView groupsType='example' />}
+          {!isLoggedIn && <LandingPage />}
+
                 </Route>
 
             </Switch>
