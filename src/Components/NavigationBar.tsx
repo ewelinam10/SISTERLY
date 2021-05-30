@@ -1,15 +1,21 @@
 
 import { Navbar, Nav, FormControl, Form, NavDropdown, Button, NavLink } from 'react-bootstrap';
 import image from '../images/logo.svg'
+import { useAppDispatch } from '../app/hooks';
+import { logout } from "../features/usersession/userSessionSlice";
 
 interface NavigationBarProps {
     isLoggedIn: boolean;
 }
 
 const NavigationBar: React.FC<NavigationBarProps> = (options: NavigationBarProps) => {
-    let navLinks: JSX.Element[] = options.isLoggedIn ? getLinks4LoggedInUser() : getMainLinks();
+    const dispatch = useAppDispatch();
+    const onLogoutClick = () => {
+        dispatch(logout());
+    };
+    let navLinks: JSX.Element[] = options.isLoggedIn ? getLinks4LoggedInUser(onLogoutClick) : getMainLinks();
     return (
-        <Navbar sticky="top" className='small' expand="lg">
+        <Navbar sticky="top" expand="lg">
             <Navbar.Brand href="/">
                 <img width='45%' src={image} />
 
@@ -24,16 +30,18 @@ const NavigationBar: React.FC<NavigationBarProps> = (options: NavigationBarProps
     );
 }
 
-function getLinks4LoggedInUser(): JSX.Element[] {
+function getLinks4LoggedInUser(onLogoutClick: () => void): JSX.Element[] {
     let navLinks: JSX.Element[] = [];
     navLinks.push(<Nav.Link href="/addGroup">ZAŁÓŻ KRĄG</Nav.Link>);
     navLinks.push(<Nav.Link href="/myTools">WIDOK SPOTKANIA</Nav.Link>);
     navLinks.push(<Nav.Link href="/mentors">MENTORZY</Nav.Link>);
     navLinks.push(<Nav.Link href="/rules">KODEKS SISTERLY</Nav.Link>);
     navLinks.push(<Nav.Link href="/knowhow">BAZA WIEDZY</Nav.Link>);
-    navLinks.push(<Nav.Link href="/logout">WYLOGUJ</Nav.Link>);
+    navLinks.push(<Nav.Link onClick={onLogoutClick} href="/">WYLOGUJ</Nav.Link>);
     return navLinks;
 }
+
+
 
 function getMainLinks(): JSX.Element[] {
     let navLinks: JSX.Element[] = [];
