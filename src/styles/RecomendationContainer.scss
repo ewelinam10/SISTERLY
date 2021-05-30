@@ -5,6 +5,7 @@
     justify-content: space-between;
     gap:5%;
     > div{
+        flex:1;
         text-align:center;
         border : 1px solid $base-purple;
         border-radius: 10px;
