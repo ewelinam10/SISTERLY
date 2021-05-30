@@ -7,8 +7,8 @@ export interface UserSessionState {
 }
 
 const initialState: UserSessionState = {
-  isLogged: false,
-  username: "",
+  isLogged: localStorage.getItem('isLogged') == 'true' ? true : false,
+  username: localStorage.getItem('username') ?? ''
 }
 
 export const userSessionSlice = createSlice({
@@ -16,10 +16,14 @@ export const userSessionSlice = createSlice({
   initialState,
   reducers: {
     logout: (state) => {
+      localStorage.setItem('isLogged','false');
+      localStorage.setItem('username','');
       state.isLogged = false;
       state.username = "";
     },
     login: (state, action: PayloadAction<string>) => {
+      localStorage.setItem('isLogged','true');
+      localStorage.setItem('username',action.payload);
       state.isLogged = true
       state.username = action.payload
     },

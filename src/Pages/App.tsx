@@ -15,6 +15,7 @@ import LandingPage from './LandingPage';
 import MyTools from "./MyTools";
 import { isUserLoggedIn, userName } from "../features/usersession/userSessionSlice"
 import { useAppSelector, } from '../app/hooks';
+import Mentors from './Mentors';
 
 
 export default function App() {
@@ -39,9 +40,15 @@ export default function App() {
         </Route>
         <Route exact path="/myTools" component={MyTools}>
         </Route>
+        <Route path="/mentors">
+          <Mentors />
+        </Route>
         <Route path="/">
           <LandingPage />
         </Route>
+
+
+
       </Switch>
 
     </Router >
