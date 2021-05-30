@@ -7,3 +7,14 @@
     border: 2px solid $base-blue;
   }
 }
+
+
+.my-panel-rectangle{
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid $base-light-purple;
+
+  &:hover{
+    border: 2px solid $base-purple;
+  }
+}
