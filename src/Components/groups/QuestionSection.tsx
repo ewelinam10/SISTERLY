@@ -1,7 +1,8 @@
 import React, {useState} from 'react';
+import Avatar from '../../images/icons/avatar.svg'
+import { Button, Card, FormText } from 'react-bootstrap';
 
-
-const QuestionSection = ({question, addAnswer}) => {
+const QuestionSection = ({question, addAnswer, index, questionCount}) => {
 
     const [answer, setAnswer] = useState('');
 
@@ -15,10 +16,17 @@ const QuestionSection = ({question, addAnswer}) => {
 
     return (
      <div>
-         <div>
-             {question}
-             <input value={answer} onChange={handleChangeAnswer}/>
-             <button onClick={() => {addAnswer(answer); clearAnswer()}}>Next question</button>
+         <div className="groups-question-card">
+             <div>
+                 <img className='groups-question-avatar' src={Avatar}/>
+             </div>
+             <div className="groups-question-question">Krok {index} z {questionCount}</div>
+             <div className="groups-question-question">{question}</div>
+             <textarea className="form-control" value={answer} onChange={handleChangeAnswer}/>
+             <div className="mt-2 buttonWrapper">
+                 <Button className="groups-question-btn-prev" onClick={() => {addAnswer(answer); clearAnswer()}}>Poprzednie</Button>
+                 <Button className="groups-question-btn-next offset-6" onClick={() => {addAnswer(answer); clearAnswer()}}>Następne</Button>
+             </div>
          </div>
      </div>
     )
