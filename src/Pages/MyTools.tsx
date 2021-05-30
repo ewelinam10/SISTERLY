@@ -9,6 +9,7 @@ import Draggable, {DraggableCore} from 'react-draggable';
 import StickyNoteImg from "../images/sticky_note.jpg"
 import PlusIcon from "../images/icons/plus-icon.svg"
 import {Navbar} from "react-bootstrap";
+import OnlineTable from "../images/icons/OnlineIcon.png"
 
 const MyTools = () => {
 
@@ -112,10 +113,11 @@ const MyTools = () => {
             <div className="mt-2 p-0 d-flex mr-2">
 
                 <div className="mr-2 p-0 col-md-8">
-                    <div className="my-panel">
+                    <div className="my-panel my-tools-meeting-wrapper">
                         <div className="col-md-1 d-flex text-left">
                             <img className="my-tools-icon" src={Camera}/>
                             <img className="my-tools-icon" src={Mic}/>
+
                         </div>
                         <div className="my-tools-meeting-header">
                             Twoje najbliższe spotkanie rozpocznie sie za:
@@ -123,6 +125,7 @@ const MyTools = () => {
                         <div className="my-tools-contdown">
                             {formatedCounter}
                         </div>
+                        <img className="online-table" src={OnlineTable}/>
                     </div>
 
                     <div className="mt-1 my-panel my-tools-message-wrapper">
