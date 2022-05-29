@@ -14,13 +14,15 @@
     .img {
       width: 40%;
       height: 40%;
-      border-radius: 100%;
+      border-radius: 50% !important;
       background-color: #6289D4;
       background-image: url("../groupAv.jpg");
       background-size: cover;
       background-position: bottom;
       border: 1px solid $base-purple;
     }
+    
+    
   }
   @media (min-width: 901px) {
     .contain {
@@ -118,4 +120,8 @@
 
 .card{
     border-radius: 20% !important;
+}
+
+.card-body{
+ height: 100% !important;
 }

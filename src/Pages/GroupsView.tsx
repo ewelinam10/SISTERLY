@@ -22,8 +22,7 @@ const groupsMock = [
         description: 'Wspólne rozpoczęcie hodowli warzyw i owoców na balkonie, rośliny wybierzemy na spotkaniu',
         numberOfTasks: '4',
         hash1: '#ogrodnictwo',
-        hash2: '#naswiezympowietrzu',
-        hash3: '#umiejetnosc',
+        hash2: '#naswiezympowietrzu'
     },
     {
         name: 'PRZEBRANŻUJ SIĘ!',
@@ -84,14 +83,17 @@ class GroupsView extends React.Component<GroupsViewProps> {
     //         .catch(console.log)
     // }
     render() {
+        let i = 0;
         return (
             <div className='contain'>
                 {
+
                     groupsMock.map((group) => {
+                        i++;
                         return (
                             <Card className="tile">
                                 <Card.Body>
-                                    <div className="img" />
+                                    <div className={['img', i.toString()].join(' ')} />
                                     <Card.Title className="title">{group.name}</Card.Title>
                                     <div className="hashtags">
                                         <div className="hash1">{group.hash1}</div>
