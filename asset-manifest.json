@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/sisterly/static/css/main.93a5c8a0.chunk.css",
+    "main.js": "/sisterly/static/js/main.9dc0e5df.chunk.js",
+    "main.js.map": "/sisterly/static/js/main.9dc0e5df.chunk.js.map",
+    "runtime-main.js": "/sisterly/static/js/runtime-main.54710745.js",
+    "runtime-main.js.map": "/sisterly/static/js/runtime-main.54710745.js.map",
+    "static/css/2.4c97ca4f.chunk.css": "/sisterly/static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.53391d70.chunk.js": "/sisterly/static/js/2.53391d70.chunk.js",
+    "static/js/2.53391d70.chunk.js.map": "/sisterly/static/js/2.53391d70.chunk.js.map",
+    "index.html": "/sisterly/index.html",
+    "static/css/2.4c97ca4f.chunk.css.map": "/sisterly/static/css/2.4c97ca4f.chunk.css.map",
+    "static/css/main.93a5c8a0.chunk.css.map": "/sisterly/static/css/main.93a5c8a0.chunk.css.map",
+    "static/js/2.53391d70.chunk.js.LICENSE.txt": "/sisterly/static/js/2.53391d70.chunk.js.LICENSE.txt",
+    "static/media/MW_foto.c1be7824.jpg": "/sisterly/static/media/MW_foto.c1be7824.jpg",
+    "static/media/OnlineIcon.02df1cc5.png": "/sisterly/static/media/OnlineIcon.02df1cc5.png",
+    "static/media/allstyles.scss": "/sisterly/static/media/groupAv.fb75f0a7.jpg",
+    "static/media/chat_black_24dp.3c12da91.svg": "/sisterly/static/media/chat_black_24dp.3c12da91.svg",
+    "static/media/em_portret.42c0d78b.jpg": "/sisterly/static/media/em_portret.42c0d78b.jpg",
+    "static/media/hearticon.82676ea2.svg": "/sisterly/static/media/hearticon.82676ea2.svg",
+    "static/media/kasia.7f54f416.jpg": "/sisterly/static/media/kasia.7f54f416.jpg",
+    "static/media/logo.1709ba9f.svg": "/sisterly/static/media/logo.1709ba9f.svg",
+    "static/media/main_image.5ca026ed.jpeg": "/sisterly/static/media/main_image.5ca026ed.jpeg",
+    "static/media/mic_off_black_24dp.198688a5.svg": "/sisterly/static/media/mic_off_black_24dp.198688a5.svg",
+    "static/media/plus-icon.376e9b6a.svg": "/sisterly/static/media/plus-icon.376e9b6a.svg",
+    "static/media/step_1.7f905426.svg": "/sisterly/static/media/step_1.7f905426.svg",
+    "static/media/step_2.14938917.svg": "/sisterly/static/media/step_2.14938917.svg",
+    "static/media/step_3.976f709d.svg": "/sisterly/static/media/step_3.976f709d.svg",
+    "static/media/step_4.c933890f.svg": "/sisterly/static/media/step_4.c933890f.svg",
+    "static/media/sticky_note.0b1ba5d3.jpg": "/sisterly/static/media/sticky_note.0b1ba5d3.jpg",
+    "static/media/videocam_off_black_24dp.c4b50005.svg": "/sisterly/static/media/videocam_off_black_24dp.c4b50005.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.54710745.js",
+    "static/css/2.4c97ca4f.chunk.css",
+    "static/js/2.53391d70.chunk.js",
+    "static/css/main.93a5c8a0.chunk.css",
+    "static/js/main.9dc0e5df.chunk.js"
+  ]
+}
