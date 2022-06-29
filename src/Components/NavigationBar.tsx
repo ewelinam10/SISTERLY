@@ -56,7 +56,7 @@ function getNavDrop(onLogoutClick: () => void): JSX.Element {
 function getMainLinks(): JSX.Element[] {
     let navLinks: JSX.Element[] = [];
     navLinks.push(<Nav.Link href="/singin">ZALOGUJ</Nav.Link>);
-    navLinks.push(<Nav.Link href="/signup">ZAŁÓŻ KONTO</Nav.Link>);
+    navLinks.push(<Nav.Link href={process.env.PUBLIC_URL + '/signup'}>ZAŁÓŻ KONTO</Nav.Link>);
     navLinks.push(<Nav.Link href="/mentor_registration">ZOSTAŃ MENTOREM</Nav.Link>);
     return navLinks;
 }
